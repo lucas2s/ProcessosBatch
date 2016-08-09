@@ -1,0 +1,152 @@
+body {
+	background-color: #f2f2f2;
+	font-family: Verdana, Arial, Sans-Serif;
+}
+
+#idCabecalho {
+	height: 100px;
+	background-color: #EEEEEE;
+}
+
+#cabecalho-left img{
+	width: 200px;
+	height: 90px;	
+}
+
+#cabecalho-right p{
+	margin-top: 35px;
+    text-align: center;
+	color: #000000;
+	letter-spacing: 3px;	
+}
+
+#idbarra {
+	z-index: 99;
+}
+
+.nav-positon-on {
+	margin-top: 50px;
+}
+
+.page-header {
+	font-family: Courier New;
+	text-align: center;
+    text-transform: uppercase;
+	font-weight: bold;
+}
+
+.navbar {
+	margin:0;
+	padding:0;
+}
+
+.affix {
+    top: 0px;
+    width: 100%;
+}
+
+#idCorpo {
+	padding-bottom: 90px;
+}
+
+#idRodape {
+	position: fixed;
+	height: 90px;
+	padding-top: 10px;
+	padding-left: 20px;
+	bottom: 0px;
+	width: 100%;
+	background-color: #000000;
+}
+
+#idLado {
+	background-color: #CCCCCC;
+}
+
+.icones {
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.btnBarLateral {
+	text-align: left;
+	display: block;
+}
+
+.btnBarLateral a{
+	background-color: #CCCCCC;
+	letter-spacing: 3px;
+	font-size: 15px;
+	font-family: Calibri;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.btnBarLateral a:hover {
+	letter-spacing: 3px;
+	background-color: #f2f2f2;
+	font-size: 15px;
+	font-family: Calibri;
+	color: #000000;
+	font-weight: bold;
+}
+
+.btnBarLateral a:hover {
+	letter-spacing: 3px;
+	background-color: #f2f2f2;
+	font-size: 15px;
+	font-family: Calibri;
+	color: #000000;
+	font-weight: bold;
+}
+
+.btnBarLateral a:active {
+	letter-spacing: 3px;
+	background-color: #4db8ff;
+	font-size: 15px;
+	font-family: Calibri;
+	color: #000000;
+	font-weight: bold;
+}
+
+.dvAbend {
+	padding-top: 105px;
+}
+
+.txtAbend {
+	color: #000000;
+	font-family: Calibri;
+	font-size: 18px;
+	line-height: 100%;
+}
+
+.upclass {
+	text-align: right;
+	line-height: 100%;
+	font-size: 18px;
+}
+
+.liAbenda {
+	color: #000000;
+	font-family: Calibri;
+	font-size: 18px;
+	line-height: 100%;
+}
+
+
+#idRodapeLeft h4{
+	font-size: 15px;
+}
+
+#idRodapeLeft p{
+	color: #FFFFFF;
+	font-size: 11px;
+}
+
+#idRodapeRight p {
+	margin-top: 25px;
+    text-align: center;
+	color: #FFFFFF;
+	letter-spacing: 2px;
+	font-size: 12px;
+}

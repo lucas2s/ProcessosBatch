@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<title>Accenture - Painel de Processos Batch</title>
+        <link rel="shortcut icon" href="imagem/iconePrincipal.png"> 
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+	<body>
+<!-- Inicio Cabeçalho - Não remover -->	
+		<header id="idCabecalho">
+			<div class="container-fluid">
+				<div class="row">
+					<div id="cabecalho-left" class="col-sm-3 col-md-4 col-lg-3">	
+						<img src="imagem/logo.png" alt="logo principal" />
+					</div>
+					<div id="cabecalho-right" class="col-sm-9 col-md-8 col-lg-9">	
+						<p>Fábrica STC - Painel de Processos Batch</p>
+					</div>
+				</div>
+			</div>
+		</header>
+<!-- Fim Cabeçalho - Não remover-->	
+		<nav id="idbarra" class="navbar navbar-inverse affix" data-spy="affix" data-offset-top="100">
+			 <div class="container-fluid">
+			 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#idBarLateral">
+					<span class="glyphicon glyphicon-list-alt icones"></span>
+				</button>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="glyphicon glyphicon-home icones"></span>
+				</button>
+				<div id="myNavbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#JCL">JCL</a></li>
+						<li class=""><a href="#Natural">Natural</a></li>
+						<li class=""><a href="#Melhorias">Melhorias</a></li>
+						<li class=""><a href="#Sugestoes">Sugestões</a></li>
+					</ul>               
+				</div>
+			</div>
+		</nav>
+		<div id="idCorpo"> 
+<!-- Conteudo da Página -->	
+			<div class="container-fluid">
+				<div class="row">
+<!-- Inicio Menu da Lateral - Alterar quando for referente ao menu princiapl -->					
+					<aside id="idLado" class="col-sm-3 col-md-4 col-lg-3 ">
+						<nav id="idBarLateral" class="collapse navbar-collapse">
+							<ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="100">
+								<li class="btnBarLateral active"><a href="#Abends" >Códigos de ABEND'S</a></li>
+								<li class="btnBarLateral"><a href="#Runbook" >Runbook</a></li>
+								<li class="btnBarLateral"><a href="#Control-M" >Control-M</a></li>
+								<li class="btnBarLateral"><a href="#Dolv" >Dolv</a></li>
+								<li class="btnBarLateral"><a href="#Simprocs" >Simprocs</a></li>
+							</ul>
+						</nav>
+					</aside>
+<!-- Fim Menu da Lateral - Alterar quando for referente ao menu princiapl -->						
+					<section id="idConteudo" class="col-sm-9 col-md-8 col-lg-9">
+<!-- Incio Conteúdo - Alterar referente ao menu indicado -->
+<!-- Fim Menu dos erros -->
+						<div id="idMenuErros">
+							<div class="page-header alert alert-info">
+								<h1>CÓDIGOS DE ABEND'S</h1>
+							</div>
+							<ul>
+								<li class="btn-group btn-group-justified">
+									<a href="#D1B0" class="scroll btn btn-primary">D1B0</a>
+									<a href="#S001" class="scroll btn btn-primary">S001</a>
+									<a href="#S002" class="scroll btn btn-primary">S002</a>
+									<a href="#S013" class="scroll btn btn-primary">S013</a>
+									<a href="#S033" class="scroll btn btn-primary">S033</a>
+									<a href="#S038" class="scroll btn btn-primary">S038</a>
+									<a href="#S03A" class="scroll btn btn-primary">S03A</a>
+									<a href="#S03B" class="scroll btn btn-primary">S03B</a>
+									<a href="#S03E" class="scroll btn btn-primary">S03E</a>
+								</li>
+								<li class="btn-group btn-group-justified">
+									<a href="#S047" class="scroll btn btn-primary">S047</a>
+									<a href="#S04E" class="scroll btn btn-primary">S04E</a>
+									<a href="#S0B0" class="scroll btn btn-primary">S0B0</a>
+									<a href="#S0B6" class="scroll btn btn-primary">S0B6</a>
+									<a href="#S0C1" class="scroll btn btn-primary">S0C1</a>
+									<a href="#S0C2" class="scroll btn btn-primary">S0C2</a>
+									<a href="#S0C3" class="scroll btn btn-primary">S0C3</a>
+									<a href="#S0C4" class="scroll btn btn-primary">S0C4</a>
+									<a href="#S0C5" class="scroll btn btn-primary">S0C5</a>
+								</li>
+								<li class="btn-group btn-group-justified">
+									<a href="#S0C6" class="scroll btn btn-primary">S0C6</a>
+									<a href="#S0C7" class="scroll btn btn-primary">S0C7</a>
+									<a href="#S0C8" class="scroll btn btn-primary">S0C8</a>
+									<a href="#S0C9" class="scroll btn btn-primary">S0C9</a>
+									<a href="#S0CB" class="scroll btn btn-primary">S0CB</a>
+									<a href="#S106" class="scroll btn btn-primary">S106</a>
+									<a href="#S122" class="scroll btn btn-primary">S122</a>
+									<a href="#S137" class="scroll btn btn-primary">S137</a>
+									<a href="#S213" class="scroll btn btn-primary">S213</a>
+								</li>
+								<li class="btn-group btn-group-justified">
+									<a href="#S214" class="scroll btn btn-primary">S214</a>
+									<a href="#S222" class="scroll btn btn-primary">S222</a>
+									<a href="#S237" class="scroll btn btn-primary">S237</a>
+									<a href="#S2F3" class="scroll btn btn-primary">S2F3</a>
+									<a href="#S313" class="scroll btn btn-primary">S313</a>
+									<a href="#S314" class="scroll btn btn-primary">S314</a>
+									<a href="#S322" class="scroll btn btn-primary">S322</a>
+									<a href="#S337" class="scroll btn btn-primary">S337</a>
+									<a href="#S400" class="scroll btn btn-primary">S400</a>
+								</li>
+								<li class="btn-group btn-group-justified">
+									<a href="#S413" class="scroll btn btn-primary">S413</a>
+									<a href="#S414" class="scroll btn btn-primary">S414</a>
+									<a href="#S422" class="scroll btn btn-primary">S422</a>
+									<a href="#S428" class="scroll btn btn-primary">S428</a>
+									<a href="#S458" class="scroll btn btn-primary">S458</a>
+									<a href="#S513" class="scroll btn btn-primary">S513</a>
+									<a href="#S514" class="scroll btn btn-primary">S514</a>
+									<a href="#S522" class="scroll btn btn-primary">S522</a>
+									<a href="#S606" class="scroll btn btn-primary">S606</a>
+								</li>
+								<li class="btn-group btn-group-justified">
+									<a href="#S613" class="scroll btn btn-primary">S613</a>
+									<a href="#S614" class="scroll btn btn-primary">S614</a>
+									<a href="#S637" class="scroll btn btn-primary">S637</a>
+									<a href="#S706" class="scroll btn btn-primary">S706</a>
+									<a href="#S713" class="scroll btn btn-primary">S713</a>
+									<a href="#S714" class="scroll btn btn-primary">S714</a>
+									<a href="#S722" class="scroll btn btn-primary">S722</a>
+									<a href="#S737" class="scroll btn btn-primary">S737</a>
+									<a href="#S80A" class="scroll btn btn-primary">S80A</a>
+								</li>
+								<li class="btn-group btn-group-justified">
+									<a href="#S804" class="scroll btn btn-primary">S804</a>
+									<a href="#S806" class="scroll btn btn-primary">S806</a>
+									<a href="#S813" class="scroll btn btn-primary">S813</a>
+									<a href="#S821" class="scroll btn btn-primary">S821</a>
+									<a href="#S826" class="scroll btn btn-primary">S826</a>
+									<a href="#S837" class="scroll btn btn-primary">S837</a>
+									<a href="#S850" class="scroll btn btn-primary">S850</a>
+									<a href="#S853" class="scroll btn btn-primary">S853</a>
+									<a href="#S876" class="scroll btn btn-primary">S876</a>
+								</li>
+								<li class="btn-group btn-group-justified">
+									<a href="#S878" class="scroll btn btn-primary">S878</a>
+									<a href="#S90A" class="scroll btn btn-primary">S90A</a>
+									<a href="#S906" class="scroll btn btn-primary">S906</a>
+									<a href="#S913" class="scroll btn btn-primary">S913</a>
+									<a href="#SA13" class="scroll btn btn-primary">SA13</a>
+									<a href="#SB37" class="scroll btn btn-primary">SB37</a>
+									<a href="#SD37" class="scroll btn btn-primary">SD37</a>
+									<a href="#SE37" class="scroll btn btn-primary">SE37</a>
+									<a href="#RCxx" class="scroll btn btn-primary">RCxx</a>
+								</li>
+								<li class="btn-group btn-group-justified">
+									<a href="#Uxxxx" class="scroll btn btn-primary">Uxxxx</a>
+									<a href="#FTP" class="scroll btn btn-primary">FTP</a>
+									<a href="#VSAM" class="scroll btn btn-primary">VSAM</a>
+									<a href="#Control-R" class="scroll btn btn-primary">Control-R</a>
+									<a href="#Bibliotecas" class="scroll btn btn-primary">Bibliotecas</a>
+								</li>
+							</ul>
+						</div>
+<!-- Fim Menu dos erros -->
+<!-- Inicio Descrição dos erros -->
+						<div id="idDescErros"> 
+							<article id="D1B0" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">D1B0</span></h3>
+									<p class="txtAbend">O GDG do arquivo de leitura ou gravação não foi criado.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC00" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC00</span></h3>
+									<p class="txtAbend">Operação com sucesso.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC02" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC02</span></h3>
+									<p class="txtAbend">A chave possui duplicata e é permitido.</p>
+									<p class="txtAbend">Opção DUPLICATE.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC10" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC10</span></h3>
+									<p class="txtAbend">Fim de arquivo ou arquivo não disponível para abertura.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC20" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC20</span></h3>
+									<p class="txtAbend">Sem maiores informações.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC21" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC21</span></h3>
+									<p class="txtAbend">Erro de sequência.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC22" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC22</span></h3>
+									<p class="txtAbend">Chave duplicada não permitida.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC23" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC23</span></h3>
+									<p class="txtAbend">Registro não encontrado.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC24" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC24</span></h3>
+									<p class="txtAbend">Estouro de espaço durante gravação (ESDS).</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC30" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC30</span></h3>
+									<p class="txtAbend">Sem maiores informações.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC34" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC34</span></h3>
+									<p class="txtAbend">Estouro de espaço durante gravação (ESDS).</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC90" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC90</span></h3>
+									<p class="txtAbend">Sem maiores informações.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC91" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC91</span></h3>
+									<p class="txtAbend">Erro de PASSWORD.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC92" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC92</span></h3>
+									<p class="txtAbend">Erro lógico.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC93" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC93</span></h3>
+									<p class="txtAbend">Arquivo não disponível.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC94" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC94</span></h3>
+									<p class="txtAbend">Erro em leitura sequêncial.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC95" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC95</span></h3>
+									<p class="txtAbend">Informação invalida ou incompleta para o arquivo.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC96" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC96</span></h3>
+									<p class="txtAbend">Falta cartão DD.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC97" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC97</span></h3>
+									<p class="txtAbend">O arquivo não foi devidamente fechado em execução anterior.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="RC111" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">RC111</span></h3>
+									<p class="txtAbend">Cancelamento controlado pelo programa.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S001" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S001</span></h3>
+									<p class="txtAbend">Pode ter varias causas:</p>
+									<ul class="ulAbenda">
+										<li class="liAbenda">Data Check (incongruência em dados lidos/manipulados).</li>
+										<li class="liAbenda">Fechar arquivo que não foi aberto ou Abrir arquivo que já esta aberto.</li>
+										<li class="liAbenda">A DCB especificada no JCL não combina com a DCB real do arquivo.</li>
+										<li class="liAbenda">Fita de 800 bpi's lida em unidade de 1600 bpi's ou vice-versa.</li>
+										<li class="liAbenda">Fita 'SL' lida com 'NL'.</li>
+										<li class="liAbenda">Especificação de unidade incompatível com o arquivo.</li>
+										<li class="liAbenda">Fita para leitura com LABEL=(2,BPL), esta com a DCB diferente da especificada no programa.</li>
+										<li class="liAbenda">Tentar ler (READ) um arquivo fechado (CLOSE).</li>
+										<li class="liAbenda">O JCL foi catalogado sem os cartões SYSIN ou SYSOUT.</li>
+										<li class="liAbenda">Falta codificar 'BLOCK CONTAINS 0 RECORDS'.</li>
+										<li class="liAbenda">Erro na descrição da 'FD'.</li>
+										<li class="liAbenda">Fita para leitura com LABEL=(2,BLP), esta com a DCB diferente da especificada no programa.</li>
+										<li class="liAbenda">Tentar ler (READ) um arquivo após fecha-lo (CLOSE).</li>
+										<li class="liAbenda">Arquivo de leitura esta mau gravado.</li>
+										<li class="liAbenda">Os cartões de JCL foram catalogados sem os cartões SYSIN e ou SYSOUT.</li>
+										<li class="liAbenda">Falta codificar 'BLOCK CONTAINS O RECORDS'</li>
+										<li class="liAbenda">FD errada.</li>
+										<li class="liAbenda">O DCB descrito não combina com o DCB do cartão de controle.</li>
+									</ul>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S002" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S002</span></h3>
+									<p class="txtAbend">Erro no processamento de um arquivo sequencial BSAM ou QSAM, ou na criação de um arquivo de organização direta. Uma ou mais das seguintes razões:</p>
+									<ul class="ulAbenda">
+										<li class="liAbenda">O Registro a ser transferido possuia mais de 32.767 bytes ou excedeu o tamanho da trilha, no caso de arquivo em disco.</li>
+										<li class="liAbenda">Os Caracteres de controle de um registro de tamanho variável contem um valor fora do intervalo valido que vai de '4' a '32.767'. Isso também se aplica a blocos de tamanho variável.</li>
+									</ul>
+									<p class="txtAbend">Comprimento RECORD maior ou menor do que o OUTPUT.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S013" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S013</span></h3>
+									<p class="txtAbend">Erro na abertura de um arquivo, acompanhado da mensagem ICE141I:</p>
+									<ul class="ulAbenda">
+										<li class="liAbenda">RC = 1C - Erro de I/O no acesso ao diretório de um DATA SET PARTICIONADO.</li>
+										<li class="liAbenda">RC = 08 - Cartucho ou Label errado.</li>
+										<li class="liAbenda">RC = 10 - Tamanho de bloco não especificado no JCL ou o tamanho do registro descrito após a 'FD' não coincide com o tamanho real do arquivo.</li>
+										<li class="liAbenda">RC = 13 - Não existe definição de DSCB e/ou não foi informada DCB na PROC.</li>
+										<li class="liAbenda">RC = 18 - O membro de um DATA SET PARTICIONADO não foi encontrado. A mensagem especifica o STEP, o DATA SET PARTICIONADO e o MEMBRO.</li>
+										<li class="liAbenda">RC = 20 -	Erro de abertura de um arquivo QSAM causado por um ou mais dos motivos abaixo:</li>
+										<ul class="ulAbenda">
+											<li class="liAbenda">O BLKSIZE não é múltiplo de LRECL.</li>
+											<li class="liAbenda">O BLKSIZE onde os registros são de tamanho variável não foi calculado com o acréscimo de 4 Bytes ao LRECL.</li>
+										</ul>
+										<li class="liAbenda">RC = 34 - Não existe definição de DSCB e/ou não foi informada DCB na PROC.</li>
+										<li class="liAbenda">RC = 68 - BLKZISE maior que 32.767.</li>
+									</ul>
+									<p class="txtAbend">A DCB descrita no programa esta diferente da do arquivo de leitura ou gravação.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S033" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S033</span></h3>
+									<p class="txtAbend">Erro de I/O em um arquivo indexado sequencial.</p>
+									<p class="txtAbend">Dica: Submeta o JOB novamente e se o erro persistir, refaça a criação do arquivo.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S038" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S038</span></h3>
+									<p class="txtAbend">Falta de espaço na área de índice de um arquivo indexado sequencial.</p>
+									<p class="txtAbend">Dica: Apague o arquivo e refaça a sua criação, especificando uma área de índice maior.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S03A" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S03A</span></h3>
+									<p class="txtAbend">Erro de I/O na VTOC durante o fechamento de um arquivo indexado sequencial.</p>
+									<p class="txtAbend">Dica: Submeta o JOB novamente e se o erro persistir, recorra ao Suporte Técnico.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S03B" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S03B</span></h3>
+									<p class="txtAbend">Para arquivo sequencial indexado.</p>
+									<ul class="ulAbenda">
+										<li class="liAbenda">O formato da DSCB indicando que o arquivo não será criado.</li>
+										<li class="liAbenda">O arquivo não foi fechado ao ser criado.</li>
+									</ul>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S03E" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S03E</span></h3>
+									<p class="txtAbend">Falta de espaço na área de dados de um arquivo indexado sequencial.</p>
+									<p class="txtAbend">Dica: Apague o arquivo e refaça a sua criação, especificando uma área de dados maior.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S047" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S047</span></h3>
+									<p class="txtAbend">O Programa emitiu um SVC para um programa não catalogado em uma biblioteca valida, ou o programa chamado não foi catalogado com parâmetro de link-edição 'AC=1'.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S04E" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S04E</span></h3>
+									<p class="txtAbend">Biblioteca autorizada movida de seu disco.</p>
+									<p class="txtAbend">Utilitário preso no DB2.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S0B0" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S0B0</span></h3>
+									<p class="txtAbend">Erro de HARDWARE ocorrido na fila de JOB'S no arquivo SYS1.SYSWADS.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S0B6" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S0B6</span></h3>
+									<p class="txtAbend">Erro de HARDWARE ocorrido na fila de JOB'S no arquivo SYS1.SYSJOBQE.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S0C1" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S0C1</span></h3>
+									<p class="txtAbend">Erro de operação (operation exception), causado usualmente por uma instrução de desvio errada.</p>
+									<p class="txtAbend">Tome as seguintes providencias:</p>
+									<ul class="ulAbenda">
+										<li class="liAbenda">Verifique se no mapa de LINK-EDIÇÃO existem endereços que não foram resolvidos.</li>
+										<li class="liAbenda">Verifique se existe um desvio para fora de um PERFORM.</li>
+										<li class="liAbenda">Confira se foram especificados todos os cartões 'DD' dos arquivos em uso.</li>
+										<li class="liAbenda">Verifique se o programa chama sub-programas e a opção 'ENDJOB' esta em efeito. As sub-rotinas do COBOL podem ter sido eliminadas da memória quando foi executado o 'EXIT' de um sub-programa chamado.</li>
+										<li class="liAbenda">Verifique se os arquivos foram abertos de forma coerente com as operações efetuadas por ele. Um WRITE em um arquivo aberto como INPUT, por exemplo, poderia causar este ABEND.</li>
+									</ul>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S0C2" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S0C2</span></h3>
+									<p class="txtAbend">A Operação privilegiada e encontrada em estado problemático.</p>
+									<p class="txtAbend">Cancelamento dentro do SORT antes do termino do arquivo.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S0C3" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S0C3</span></h3>
+									<p class="txtAbend">A instrução depende da execução de uma outra instrução.</p>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+
+							<article id="S0C4" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S0C4</span></h3>
+									<p class="txtAbend">Erro de proteção (protection exception).</p>
+									<ul class="ulAbenda">
+										<li class="liAbenda">Pode ser causado pela referencia a dados de um arquivo, antes de ter sido processada uma leitura de registros deste arquivo.</li>
+										<li class="liAbenda">Caso o item referenciado esteja definido na LINKAGE-SECTION, o erro pode ter sido causado pela passagem de parâmetros entre o programa principal e sub-programas.</li>
+										<li class="liAbenda">Se o erro foi gerado em uma linha envolvendo um item de tabela, veja se o índice esta dentro dos limites da tabela.</li>
+										<li class="liAbenda">Se o erro foi causado em uma tabela com um numero variável de ocorrências, verifique se o valor do campo descrito na clausula OCCURS NO TIMES DEPENDING ON variável esta correto.</li>
+										<li class="liAbenda">Se o programa estiver processando registros de tamanho variável, verifique se o tamanho da área descrita sob a 'FD' e igual ao tamanho máximo do registro.</li>
+										<li class="liAbenda">Uma SECTION pode não ter sido completada através de um EXIT.</li>
+										<li class="liAbenda">Se o programa usa DISPLAY, veja se existe o cartão SYSOUT DD.</li>
+										<li class="liAbenda">Se o programa usa ACCEPT, veja se existe o cartão SYSIN DD.</li>
+									</ul>
+									<ol class="ulAbenda">
+										<li class="liAbenda">DISPLAY no programa sem o cartão SYSOUT.</li>
+										<li class="liAbenda">ACCEPT no programa sem o cartão SYSIN.</li>
+										<li class="liAbenda">Estouro de tabela.</li>
+										<li class="liAbenda">Manuseio de campos com arquivos fechados. (CLOSE)</li>
+										<li class="liAbenda">Falta de EXIT em uma das SECTION'S.</li>
+									</ol>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+							
+							<article id="S0C5" class="dvAbend">
+								<div class="well well-lg">
+									<h3><span class="label label-danger">S0C5</span></h3>
+									<p class="txtAbend">Erro de proteção (protection exception).</p>
+									<ul class="ulAbenda">
+										<li class="liAbenda">Pode ser causado pela referencia a dados de um arquivo, antes de ter sido processada uma leitura de registros deste arquivo.</li>
+										<li class="liAbenda">Caso o item referenciado esteja definido na LINKAGE-SECTION, o erro pode ter sido causado pela passagem de parametros entre o programa principal e sub-programas.</li>
+										<li class="liAbenda">Caso o comando que gerou o erro envolva item subscrito ou indexado, veja se o subscrito ou índice contem um valor incorreto.</li>
+										<li class="liAbenda">Caso o dado referenciado seja de n de ocorrências variável, cheque se o valor do item do qual depende o n de ocorrências (occur depending on item) esta correto.</li>
+										<li class="liAbenda">Veja também se o programa esta processando registros de tamanho variável como devido.</li>
+										<li class="liAbenda">Pode ser também estouro de tabelas (montagem).</li>
+									</ul>
+									<ol class="ulAbenda">
+										<li class="liAbenda">Abrir (OPEN) ou fechar (CLOSE) 2 vezes um mesmo arquivo.</li>
+										<li class="liAbenda">Inverter os comandos entre os arquivos de entrada/saída. Ex: Mandar Gravar arquivo de entrada ou Mandar ler arquivo de saída.</li>
+										<li class="liAbenda">SORT - Falta de SECTION.</li>
+										<li class="liAbenda">Estouro de tabela.</li>
+									</ol>
+									<p class="upclass"><a href="#idConteudo" class="scroll"><span class="glyphicon glyphicon-upload"></span></a></p>
+								</div>
+							</article>
+						</div>
+<!-- Fim Descrição dos erros -->
+					</section>
+				</div>
+			</div>
+<!-- Fim Conteúdo - Alterar referente ao menu indicado -->			
+		</div>
+<!-- Incio Rodape - Não Alterar -->	
+		<footer id="idRodape">
+			<div class="container-fluid">
+				<div class="row">
+					<div id="idRodapeLeft" class="col-sm-6 col-md-6 col-lg-6">
+						<h4><span class="label label-default">Contatos</span></h4>
+						<p>Responsável: João Paulo<br>
+						Contato: 31 3229-3421</p>
+					</div>
+					<div id="idRodapeRight">
+						<p>Todos os direitos reservados Fabrica STC</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+<!-- Fim Rodape - Não Alterar -->	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="script/script.js"></script>
+	</body>
+</html>

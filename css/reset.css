@@ -1,0 +1,12 @@
+* {
+margin: 0px;
+padding: 0px;
+border: 0px;
+list-style:none;
+vertical-align: baseline;
+}
+
+#idLado, #idBarLateral {
+	margin: 0px;
+	padding: 0px;
+}
