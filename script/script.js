@@ -20,6 +20,14 @@ $(document).ready(function(){
 			$('#idBarraLado aside').removeClass('nav-positon-on');
 		}
 	} 
+	
+	/* ROLAGEM DOS CÓDGIOS ABEND */
+	$('#idScrollspy').scrollspy({target: ".navbar"}); 
+	
+	$('.scroll').click(function(event){        
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+	});
 });
 
 
