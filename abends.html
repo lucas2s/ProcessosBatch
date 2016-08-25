@@ -4,7 +4,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<title>Accenture - Painel de Processos Batch</title>
         <link rel="shortcut icon" href="imagem/iconePrincipal.png"> 
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	</head>
@@ -22,16 +21,18 @@
 				</div>
 			</div>
 		</header>
-<!-- Fim Cabeçalho - Não remover-->	
+<!-- Fim Cabeçalho - Não remover -->	
 		<nav id="idbarra" class="navbar navbar-inverse affix" data-spy="affix" data-offset-top="97">
 			 <div class="container-fluid">
-			 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#idLado">
+			 
+<!-- 		 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#idBarraLado">
 					<span class="glyphicon glyphicon-list-alt icones"></span>
-				</button>
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				</button> 
+-->	
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#idBarraHorizontal">
 					<span class="glyphicon glyphicon-home icones"></span>
 				</button>
-				<div id="myNavbar" class="collapse navbar-collapse">
+				<div id="idBarraHorizontal" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#JCL">JCL</a></li>
 						<li class=""><a href="#Natural">Natural</a></li>
@@ -42,23 +43,22 @@
 			</div>
 		</nav>
 		<div id="idCorpo"> 
-<!-- Conteudo da Página -->	
-			<div class="container-fluid">
+			<div id="idCorpoConteiner" class="container-fluid">
 				<div class="row">
-<!-- Inicio Menu da Lateral - Alterar quando for referente ao menu princiapl -->					
-					<aside id="idLado" class="col-sm-3 col-md-4 col-lg-3 collapse navbar-collapse">
-						<nav id="idBarLateral">
-							<ul>
+<!-- Inicio Menu da Lateral - Alterar quando for referente ao menu princiapl -->	
+					<div id="idBarraLado" class="col-sm-3 col-md-3 col-lg-3">				
+						<aside data-spy="affix" data-offset-top="97">
+							<ul class="nav nav-pills nav-stacked">
 								<li class="btnBarLateral active"><a href="#Abends" >Códigos de ABEND'S</a></li>
 								<li class="btnBarLateral"><a href="#Runbook" >Runbook</a></li>
 								<li class="btnBarLateral"><a href="#Control-M" >Control-M</a></li>
 								<li class="btnBarLateral"><a href="#Dolv" >Dolv</a></li>
 								<li class="btnBarLateral"><a href="#Simprocs" >Simprocs</a></li>
 							</ul>
-						</nav>
-					</aside>
+						</aside>
+					</div>
 <!-- Fim Menu da Lateral - Alterar quando for referente ao menu princiapl -->						
-					<section id="idConteudo" class="col-sm-9 col-md-8 col-lg-9">
+					<section id="idConteudo" class="col-sm-9 col-md-9 col-lg-9">
 <!-- Incio Conteúdo - Alterar referente ao menu indicado -->
 <!-- Fim Menu dos erros -->
 						<div id="idMenuErros">
@@ -584,14 +584,7 @@
 		<footer id="idRodape">
 			<div class="container-fluid">
 				<div class="row">
-					<div id="idRodapeLeft" class="col-sm-6 col-md-6 col-lg-6">
-						<h4><span class="label label-default">Contatos</span></h4>
-						<p>Responsável: João Paulo<br>
-						Contato: 31 3229-3421</p>
-					</div>
-					<div id="idRodapeRight">
-						<p>Todos os direitos reservados Fabrica STC</p>
-					</div>
+					<p>Todos os direitos reservados Fabrica STC</p>
 				</div>
 			</div>
 		</footer>

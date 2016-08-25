@@ -1,8 +1,22 @@
+/* CONFIGUAÇÃO PADRÃO DA PÁGINA */
 body {
-	background-color: #f2f2f2;
 	font-family: Verdana, Arial, Sans-Serif;
 }
 
+* {
+margin: 0px;
+padding: 0px;
+border: 0px;
+list-style:none;
+vertical-align: baseline;
+}
+
+#idCorpoConteiner {
+	padding-left: 0px;
+	background-color: #CCCCCC;
+}
+
+/* CONFIGUAÇÕES DE CABEÇALHO DA PÁGINA */
 #idCabecalho {
 	height: 100px;
 	background-color: #EEEEEE;
@@ -20,21 +34,34 @@ body {
 	letter-spacing: 3px;	
 }
 
+/* CONFIGUAÇÃO DOS IDS DO CORPO DA PÁGINA */
+#idCorpo {
+	padding-bottom: 50px;
+}
+
+#idBarraLado {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	background-color: #CCCCCC;
+}
+
+#idConteudo {
+	background-color: #FFFFFF;
+}
+
+/* CLASSE DINAMICA PARA FIXAR A BARRA LATERAL - ALTERANADA VIA JAVA SCRIPT */
+.nav-positon-on {
+	margin-top: 52px;
+}
+
+
+/* CONFIGURAÇÃO DA BARRA HORIZONTAL FIXA */
 #idbarra {
 	z-index: 99;
 }
 
-.nav-positon-on {
-	margin-top: 50px;
-}
-
-.page-header {
-	font-family: Courier New;
-	text-align: center;
-    text-transform: uppercase;
-	font-weight: bold;
-}
-
+/* CONFIGURAÇÃO PARA FIXAR AA BARRA HORIZONTAL */
 .navbar {
 	margin:0;
 	padding:0;
@@ -45,34 +72,15 @@ body {
     width: 100%;
 }
 
-.affix + .container-fluid {
-      padding-top: 70px;
-}
-
-#idCorpo {
-	padding-bottom: 90px;
-}
-
-#idRodape {
-	position: fixed;
-	height: 90px;
-	padding-top: 10px;
-	padding-left: 20px;
-	bottom: 0px;
-	width: 100%;
-	background-color: #000000;
-}
-
-#idLado {
-	background-color: #CCCCCC;
-}
-
+/* CLASSE DE TAMANHO DOS ICONES DA BARRA*/
 .icones {
 	font-size: 20px;
 	color: #FFFFFF;
 }
 
+/* CLASSES DE BARRA LATERAL*/
 .btnBarLateral {
+	padding-left: 10px;
 	text-align: left;
 	display: block;
 }
@@ -113,6 +121,14 @@ body {
 	font-weight: bold;
 }
 
+/* CLASSES DA PAGINA DE ABENDS */
+.page-header {
+	font-family: Courier New;
+	text-align: center;
+    text-transform: uppercase;
+	font-weight: bold;
+}
+
 .dvAbend {
 	padding-top: 105px;
 }
@@ -137,20 +153,19 @@ body {
 	line-height: 100%;
 }
 
-
-#idRodapeLeft h4{
-	font-size: 15px;
+/* CSS RODAPÉ */
+#idRodape {
+	position: fixed;
+	height: 50px;
+	padding-top: 20px;
+	bottom: 0px;
+	width: 100%;
+	background-color: #000000;
 }
 
-#idRodapeLeft p{
-	color: #FFFFFF;
-	font-size: 11px;
-}
-
-#idRodapeRight p {
-	margin-top: 25px;
+#idRodape p {
     text-align: center;
 	color: #FFFFFF;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 	font-size: 12px;
 }
