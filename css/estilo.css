@@ -45,6 +45,10 @@ body {
     width: 100%;
 }
 
+.affix + .container-fluid {
+      padding-top: 70px;
+}
+
 #idCorpo {
 	padding-bottom: 90px;
 }
